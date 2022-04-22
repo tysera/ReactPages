@@ -1,0 +1,40 @@
+.root {
+  flex-direction: row;
+  background: #7d00ad;
+  width: 229px;
+  height: 63px;
+  display: flex;
+  position: relative;
+  transition-property: transform;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 20px 30px;
+}
+.root > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.root > :global(.__wab_flex-container) > picture > img,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-left: 10px;
+}
+.root:hover {
+  background: #7d00ad;
+  transform: translateX(0px) translateY(-5px) translateZ(0px);
+}
+.getACallBack {
+  display: block;
+  font-size: 20px;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+}
